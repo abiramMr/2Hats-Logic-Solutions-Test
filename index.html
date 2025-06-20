@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2Hats Logic Solutions Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme inline {
+        --color-*: initial;
+        --text-base: 16;
+
+        --color-white: #ffffff;
+        --color-black: #111010;
+
+        /* font sizes */
+        --text-48: calc(48 / var(--text-base) * 1rem);
+        --text-46: calc(46 / var(--text-base) * 1rem);
+        --text-40: calc(40 / var(--text-base) * 1rem);
+        --text-36: calc(36 / var(--text-base) * 1rem);
+        --text-32: calc(32 / var(--text-base) * 1rem);
+        --text-28: calc(28 / var(--text-base) * 1rem);
+        --text-26: calc(26 / var(--text-base) * 1rem);
+        --text-24: calc(24 / var(--text-base) * 1rem);
+        --text-22: calc(22 / var(--text-base) * 1rem);
+        --text-20: calc(20 / var(--text-base) * 1rem);
+        --text-18: calc(18 / var(--text-base) * 1rem);
+        --text-16: calc(16 / var(--text-base) * 1rem);
+        --text-15: calc(15 / var(--text-base) * 1rem);
+        --text-14: calc(14 / var(--text-base) * 1rem);
+        --text-12: calc(12 / var(--text-base) * 1rem);
+
+        --font-footer: var(--font-poppins);
+        --font-body: var(--font-figtree);
+
+        --breakpoint-*: initial;
+        --breakpoint-sm: 640px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 1024px;
+        --breakpoint-xl: 1280px;
+        --breakpoint-2xl: 1536px;
+        --breakpoint-3xl: 1920px;
+        --breakpoint-big-screen: 2000px;
+      }
+    </style>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header
+      class="relative pt-7 lg:pt-12.5 pb-5 lg:pb-10.5 top-0 left-0 z-4 bg-white w-full"
+    >
+      <span
+        id="header-line"
+        class="absolute bottom-0 h-px bg-black origin-center"
+      ></span>
+      <div
+        class="container flex lg:flex-col justify-between lg:justify-center items-center"
+      >
+        <a
+          href="/"
+          class="relative w-full max-w-30 lg:max-w-40.5 aspect-[162/57] lg:mb-7.5"
+        >
+          <img
+            src="images/logo.svg"
+            alt="logo"
+            loading="eager"
+            class="absolute object-contain"
+          />
+        </a>
+        <nav
+        aria-label="Mobile Navigation"
+          class="flex lg:hidden justify-end items-center flex-1 gap-x-6 ml-6"
+        >
+          <button class="nav-btn">
+            <img src="images/search.svg" alt="search" />
+          </button>
+          <button
+            id="menu-btn"
+            class="p-2 cursor-pointer size-8 flex flex-col gap-0.5 justify-between items-center relative"
+          >
+            <div
+              id="menu-icon"
+              class="flex flex-col gap-1 justify-between items-center transition-transform duration-300"
+            >
+              <span class="w-6 h-0.5 bg-black origin-center"></span>
+              <span class="w-6 h-0.5 bg-black origin-center"></span>
+              <span class="w-6 h-0.5 bg-black origin-center"></span>
+            </div>
+          </button>
+        </nav>
+        <nav aria-label="Main Navigation" class="hidden lg:flex justify-between items-center w-full">
+          <button class="nav-btn">
+            <img src="images/search.svg" alt="search" />
+          </button>
+          <ul
+            class="flex justify-between items-center w-full max-w-187.5 xl:max-w-222 [&>li]:text-14 [&>li]:xl:text-16 font-bold uppercase [&>li]:leading-none [&>li]:transition-colors [&>li]:duration-300 [&>li]:ease-in-out [&>li]:hover:text-[#979797]"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Spaces</a></li>
+            <li><a href="#">Products & Services</a></li>
+            <li><a href="#">Showrooms</a></li>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="w-full flex justify-between items-center max-w-30">
+            <button class="nav-btn">
+              <img src="images/cart.svg" alt="cart" />
+            </button>
+            <button class="nav-btn">
+              <img src="images/wishlist.svg" alt="wishlist" />
+            </button>
+            <button class="nav-btn">
+              <img src="images/profile.svg" alt="profile" />
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="">
+      <section
+        class="home-banner overflow-hidden relative aspect-[500/526] md:aspect-[900/526] lg:aspect-[1200/526] xl:aspect-[1540/526] 3xl:aspect-[1920/526] py-10 md:py-15.5 flex justify-center"
+      >
+        <img
+          src="images/banner.avif"
+          alt="banner"
+          loading="eager"
+          fetchpriority="high"
+          class="absolute inset-0 object-cover size-full"
+        />
+        <div class="container relative z-1 flex justify-end items-center">
+          <div
+            class="home-banner-card w-full h-full flex flex-col bg-[#0000005C] text-white lg:max-w-183.75 py-5 md:py-10 lg:py-13 px-4 md:px-8 lg:px-10.5"
+          >
+            <h1
+              class="text-32 md:text-40 lg:text-48 font-bold leading-none mb-4 md:mb-6 lg:mb-7.5"
+            >
+              New Generation Ceramic Tile
+            </h1>
+            <p
+              class="text-14 2xl:text-16 lg:text-20 text-[#ECECEC] leading-[1.4]"
+            >
+              Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend
+              aptent dapibus metus maecenas consequat. Elementum interdum a
+              semper. Netus nullam eros nisi volutpat nibh ex ultricies.
+              Pharetra sagittis sit aliquet at. Magna nam platea justo.
+            </p>
+            <div class="mt-auto">
+              <button
+                class="bg-white h-13 cursor-pointer py-4 px-10 text-16 uppercase font-bold leading-none text-black mt-5 hover:bg-black hover:text-white transition-colors duration-300 ease-in-out"
+              >
+                Learn more
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-product pt-10 lg:pt-20 pb-20 lg:pb-28">
+        <div class="container">
+          <div class="flex flex-col justify-center items-center">
+            <h2
+              class="text-32 md:text-40 lg:text-48 font-bold leading-none mb-4 md:mb-6 lg:mb-7.5"
+            >
+              Products
+              <span
+                class="bg-[#C4C4C4] h-[5px] w-full inline-block mt-5"
+              ></span>
+            </h2>
+            <p
+              id="home-product-description"
+              class="text-14 2xl:text-16 lg:text-20 text-[#616161] leading-[1.4] max-w-206.5 text-center"
+            >
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text.
+            </p>
+          </div>
+          <div class="product__grid mt-10">
+            <div
+              class="product__area-one relative flex flex-col justify-end items-center px-3 lg:px-5"
+            >
+              <img
+                src="images/product-1.avif"
+                alt="product"
+                class="absolute object-cover size-full"
+                loading="lazy"
+              />
+              <div class="product-card">
+                <h6
+                  class="text-20 lg:text-24 xl:text-28 font-semibold leading-none text-white"
+                >
+                  Bathroom Tiles
+                </h6>
+                <p
+                  class="text-14 2xl:text-16 text-center text-[#B4B4B4] leading-none"
+                >
+                  Ante mus blandit sapien sociosqu per consequat ad.
+                </p>
+              </div>
+            </div>
+            <div
+              class="product__area-two relative flex flex-col justify-end items-center px-3 lg:px-5"
+            >
+              <img
+                src="images/product-2.avif"
+                alt="product"
+                class="absolute object-cover size-full"
+                loading="lazy"
+              />
+              <div class="product-card">
+                <h6
+                  class="text-20 lg:text-24 xl:text-28 font-semibold leading-none text-white"
+                >
+                  Marble
+                </h6>
+                <p
+                  class="text-14 2xl:text-16 text-center text-[#B4B4B4] leading-none"
+                >
+                  Ante mus blandit sapien sociosqu
+                </p>
+              </div>
+            </div>
+            <div
+              class="product__area-three relative flex flex-col justify-end items-center px-3 lg:px-5"
+            >
+              <img
+                src="images/product-3.avif"
+                alt="product"
+                class="absolute object-cover size-full"
+                loading="lazy"
+              />
+              <div class="product-card">
+                <h6
+                  class="text-20 lg:text-24 xl:text-28 font-semibold leading-none text-white"
+                >
+                  Outdoor Flooring
+                </h6>
+                <p
+                  class="text-14 2xl:text-16 text-center text-[#B4B4B4] leading-none"
+                >
+                  Ante mus blandit sapien sociosqu per consequat ad.
+                </p>
+              </div>
+            </div>
+            <div
+              class="product__area-four relative flex flex-col justify-end items-center px-3 lg:px-5"
+            >
+              <img
+                src="images/product-4.avif"
+                alt="product"
+                class="absolute object-cover size-full"
+                loading="lazy"
+              />
+              <div class="product-card">
+                <h6
+                  class="text-20 lg:text-24 xl:text-28 font-semibold leading-none text-white"
+                >
+                  Kitchen Interior
+                </h6>
+                <p
+                  class="text-14 2xl:text-16 text-center text-[#B4B4B4] leading-none"
+                >
+                  Ante mus blandit sapien sociosqu per consequat ad.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-project pb-15 lg:pb-20">
+        <div class="container">
+          <div class="flex flex-col justify-center items-center">
+            <h2
+              class="text-32 md:text-40 lg:text-48 font-bold leading-none mb-4 md:mb-6 lg:mb-7.5"
+            >
+              Projects
+              <span
+                class="bg-[#C4C4C4] h-[5px] w-full inline-block mt-5"
+              ></span>
+            </h2>
+            <p
+              id="home-project-description"
+              class="text-14 2xl:text-16 lg:text-20 text-[#616161] leading-[1.4] max-w-206.5 text-center"
+            >
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text.
+            </p>
+
+            <div
+              class="w-full home-project-cards grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-7.5 pt-10 md:pt-15 xl:pt-23"
+            >
+              <div class="flex flex-col justify-center items-center">
+                <figure class="relative w-full aspect-[333/333] mb-4 lg:mb-8.5">
+                  <img
+                    src="images/project-1.avif"
+                    alt="project"
+                    class="size-full object-cover absolute inset-0"
+                    loading="lazy"
+                  />
+                </figure>
+                <h6
+                  class="text-20 lg:text-26 font-semibold lg:text-20 text-center text-black leading-[1] mb-1"
+                >
+                  Kingdom Tower
+                </h6>
+                <p
+                  class="text-14 2xl:text-16 font-semibold text-center text-[#11101080] leading-[1.625]"
+                >
+                  Marble Flooring
+                </p>
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <figure class="relative w-full aspect-[333/333] mb-4 lg:mb-8.5">
+                  <img
+                    src="images/project-2.avif"
+                    alt="project"
+                    class="size-full object-cover absolute inset-0"
+                    loading="lazy"
+                  />
+                </figure>
+                <h6
+                  class="text-20 lg:text-26 font-semibold lg:text-20 text-center text-black leading-[1] mb-1"
+                >
+                  Dubai mall
+                </h6>
+                <p
+                  class="text-14 2xl:text-16 font-semibold text-center text-[#11101080] leading-[1.625]"
+                >
+                  Wood Flooring
+                </p>
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <figure class="relative w-full aspect-[333/333] mb-4 lg:mb-8.5">
+                  <img
+                    src="images/project-3.avif"
+                    alt="project"
+                    class="size-full object-cover absolute inset-0"
+                    loading="lazy"
+                  />
+                </figure>
+                <h6
+                  class="text-20 lg:text-26 font-semibold lg:text-20 text-center text-black leading-[1] mb-1"
+                >
+                  King Road Offices
+                </h6>
+                <p
+                  class="text-14 2xl:text-16 font-semibold text-center text-[#11101080] leading-[1.625]"
+                >
+                  Outdoor Flooring
+                </p>
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <figure class="relative w-full aspect-[333/333] mb-4 lg:mb-8.5">
+                  <img
+                    src="images/project-4.avif"
+                    alt="project"
+                    class="size-full object-cover absolute inset-0"
+                    loading="lazy"
+                  />
+                </figure>
+                <h6
+                  class="text-20 lg:text-26 font-semibold lg:text-20 text-center text-black leading-[1] mb-1"
+                >
+                  Beach Tower Alupang
+                </h6>
+                <p
+                  class="text-14 2xl:text-16 font-semibold text-center text-[#11101080] leading-[1.625]"
+                >
+                  Wood Flooring
+                </p>
+              </div>
+            </div>
+            <div class="mt-10">
+              <button
+                id="view-all-projects"
+                class="bg-black border h-13 cursor-pointer py-4 px-10 text-16 uppercase font-bold leading-none text-white hover:bg-white hover:text-black transition-colors duration-300 ease-in-out"
+              >
+                View All
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="relative z-1 w-full bg-black text-white py-10 lg:py-22.5 font-footer"
+    >
+      <div class="container">
+        <div class="flex flex-wrap justify-between gap-12 lg:gap-10">
+          <div class="w-full max-w-40.5 flex flex-col">
+            <a
+              href="/"
+              class="relative w-full max-w-40.5 aspect-[162/57] mb-8 lg:mb-10.5"
+            >
+              <img
+                src="images/logo-white.svg"
+                alt="logo"
+                loading="eager"
+                class="absolute object-contain"
+              />
+            </a>
+            <div class="flex items-center gap-4">
+              <a href="/" class="nav-btn">
+                <img src="images/facebook.svg" alt="facebook" />
+              </a>
+
+              <a href="/" class="nav-btn">
+                <img src="images/twitter.svg" alt="twitter" />
+              </a>
+              <a href="/" class="nav-btn">
+                <img src="images/instagram.svg" alt="instagram" />
+              </a>
+            </div>
+          </div>
+          <div
+            class="w-full md:max-w-87.5 2xl:max-w-116.25 flex justify-between gap-x-8"
+          >
+            <div class="flex flex-col">
+              <p class="text-14 font-semibold leading-[1.5] mb-4">Products</p>
+              <ul class="footer-link__section">
+                <li><a href="#">Sand Stone</a></li>
+                <li><a href="#">Stone</a></li>
+                <li><a href="#">Cement</a></li>
+                <li><a href="#">Soft Stone</a></li>
+              </ul>
+            </div>
+            <div class="flex flex-col">
+              <p class="text-14 font-semibold leading-[1.5] mb-4">Services</p>
+              <ul class="footer-link__section">
+                <li><a href="#">Measurement Service</a></li>
+                <li><a href="#">Product Advice</a></li>
+                <li><a href="#">Interior Design</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-full max-w-82.75 flex flex-col">
+            <p class="text-14 font-semibold leading-[1.5] mb-4">
+              Contact information
+            </p>
+            <address class="text-14 font-normal leading-[1.7]">
+              3181 Al Imam Saud Ibn Abdul Aziz Branch Rd, An Nuzhah, Riyadh
+              12474,
+            </address>
+            <address class="text-14 font-normal leading-[1.7]">
+              3 Saudi Arabia
+            </address>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      id="menu"
+      class="hidden z-3 lg:hidden h-full overflow-y-auto w-full max-w-112.5 fixed top-0 right-0 bg-white px-5 py-18 flex-col items-center justify-center gap-y-5"
+      style="transform: translateX(100%)"
+    >
+      <ul
+        class="w-full flex flex-col items-center text-20 [&>li]:border-b [&>li]:w-full [&>li]:py-5 justify-center"
+      >
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">Wishlist</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Spaces</a></li>
+        <li><a href="#">Products & Services</a></li>
+        <li><a href="#">Showrooms</a></li>
+        <li><a href="#">Company</a></li>
+        <li><a href="#">Media</a></li>
+      </ul>
+    </div>
+    <div
+      id="backdrop"
+      class="hidden fixed inset-0 bg-[#00000067] bg-opacity-50 z-2"
+    ></div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+  <script src="main.js"></script>
+</html>
