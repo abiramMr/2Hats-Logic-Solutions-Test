@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2Hats Logic Solutions Test</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <style type="text/tailwindcss">
       @theme inline {
         --color-*: initial;
@@ -69,7 +70,7 @@
           />
         </a>
         <nav
-        aria-label="Mobile Navigation"
+          aria-label="Mobile Navigation"
           class="flex lg:hidden justify-end items-center flex-1 gap-x-6 ml-6"
         >
           <button class="nav-btn">
@@ -89,7 +90,10 @@
             </div>
           </button>
         </nav>
-        <nav aria-label="Main Navigation" class="hidden lg:flex justify-between items-center w-full">
+        <nav
+          aria-label="Main Navigation"
+          class="hidden lg:flex justify-between items-center w-full"
+        >
           <button class="nav-btn">
             <img src="images/search.svg" alt="search" />
           </button>
@@ -157,7 +161,7 @@
           </div>
         </div>
       </section>
-      <section class="home-product pt-10 lg:pt-20 pb-20 lg:pb-28">
+      <section class="home-product overflow-hidden pt-10 lg:pt-20 pb-20 xl:pb-28">
         <div class="container">
           <div class="flex flex-col justify-center items-center">
             <h2
@@ -266,10 +270,158 @@
               </div>
             </div>
           </div>
+          <div
+            class="embla relative overflow-visible w-full mt-10 block xl:hidden"
+          >
+            <div class="embla__viewport">
+              <div class="embla__container flex -mx-[15px]">
+                <div
+                  class="embla__slide flex-[0_0_100%] sm:flex-[0_0_50%] md:flex-[0_0_33.33%] xl:flex-[0_0_25%] px-[15px]"
+                >
+                  <div
+                    class="relative aspect-[1/1] flex flex-col justify-end items-center px-3 lg:px-5"
+                  >
+                    <img
+                      src="images/product-1.avif"
+                      alt="product"
+                      class="absolute object-cover size-full"
+                      loading="lazy"
+                    />
+                    <div class="product-card">
+                      <h6
+                        class="text-20 lg:text-24 xl:text-28 font-semibold leading-none text-white"
+                      >
+                        Bathroom Tiles
+                      </h6>
+                      <p
+                        class="text-14 2xl:text-16 text-center text-[#B4B4B4] leading-none"
+                      >
+                        Ante mus blandit sapien sociosqu per consequat ad.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="embla__slide flex-[0_0_100%] sm:flex-[0_0_50%] md:flex-[0_0_33.33%] xl:flex-[0_0_25%] px-[15px]"
+                >
+                  <div
+                    class="relative aspect-[1/1] flex flex-col justify-end items-center px-3 lg:px-5"
+                  >
+                    <img
+                      src="images/product-2.avif"
+                      alt="product"
+                      class="absolute object-cover size-full"
+                      loading="lazy"
+                    />
+                    <div class="product-card">
+                      <h6
+                        class="text-20 lg:text-24 xl:text-28 font-semibold leading-none text-white"
+                      >
+                        Marble
+                      </h6>
+                      <p
+                        class="text-14 2xl:text-16 text-center text-[#B4B4B4] leading-none"
+                      >
+                        Ante mus blandit sapien sociosqu
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="embla__slide flex-[0_0_100%] sm:flex-[0_0_50%] md:flex-[0_0_33.33%] xl:flex-[0_0_25%] px-[15px]"
+                >
+                  <div
+                    class="relative aspect-[1/1] flex flex-col justify-end items-center px-3 lg:px-5"
+                  >
+                    <img
+                      src="images/product-3.avif"
+                      alt="product"
+                      class="absolute object-cover size-full"
+                      loading="lazy"
+                    />
+                    <div class="product-card">
+                      <h6
+                        class="text-20 lg:text-24 xl:text-28 font-semibold leading-none text-white"
+                      >
+                        Outdoor Flooring
+                      </h6>
+                      <p
+                        class="text-14 2xl:text-16 text-center text-[#B4B4B4] leading-none"
+                      >
+                        Ante mus blandit sapien sociosqu per consequat ad.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="embla__slide flex-[0_0_100%] sm:flex-[0_0_50%] md:flex-[0_0_33.33%] xl:flex-[0_0_25%] px-[15px]"
+                >
+                  <div
+                    class="relative aspect-[1/1] flex flex-col justify-end items-center px-3 lg:px-5"
+                  >
+                    <img
+                      src="images/product-4.avif"
+                      alt="product"
+                      class="absolute object-cover size-full"
+                      loading="lazy"
+                    />
+                    <div class="product-card">
+                      <h6
+                        class="text-20 lg:text-24 xl:text-28 font-semibold leading-none text-white"
+                      >
+                        Kitchen Interior
+                      </h6>
+                      <p
+                        class="text-14 2xl:text-16 text-center text-[#B4B4B4] leading-none"
+                      >
+                        Ante mus blandit sapien sociosqu per consequat ad.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="embla__prev block xl:hidden absolute top-1/2 -translate-y-1/2 left-0 border border-black px-2 py-2 bg-white transition-all duration-300 ease-in-out hover:scale-[1.1] -translate-x-2 hover:bg-black hover:text-white"
+            >
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+            <button
+              class="embla__next block xl:hidden absolute top-1/2 -translate-y-1/2 right-0 bg-white border border-black px-2 py-2 transition-all duration-300 ease-in-out hover:scale-[1.1] translate-x-2 hover:bg-black hover:text-white"
+            >
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
-      <section class="home-project pb-15 lg:pb-20">
+      <section class="home-project overflow-hidden pb-15 lg:pb-20">
         <div class="container">
           <div class="flex flex-col justify-center items-center">
             <h2
@@ -289,89 +441,154 @@
             </p>
 
             <div
-              class="w-full home-project-cards grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-7.5 pt-10 md:pt-15 xl:pt-23"
+              class="project-embla relative overflow-visible w-full pt-10 md:pt-15 xl:pt-23"
             >
-              <div class="flex flex-col justify-center items-center">
-                <figure class="relative w-full aspect-[333/333] mb-4 lg:mb-8.5">
-                  <img
-                    src="images/project-1.avif"
-                    alt="project"
-                    class="size-full object-cover absolute inset-0"
-                    loading="lazy"
-                  />
-                </figure>
-                <h6
-                  class="text-20 lg:text-26 font-semibold lg:text-20 text-center text-black leading-[1] mb-1"
-                >
-                  Kingdom Tower
-                </h6>
-                <p
-                  class="text-14 2xl:text-16 font-semibold text-center text-[#11101080] leading-[1.625]"
-                >
-                  Marble Flooring
-                </p>
+              <div class="project-embla__viewport">
+                <div class="embla__container flex -mx-[15px]">
+                  <div
+                    class="embla__slide flex-[0_0_100%] sm:flex-[0_0_50%] md:flex-[0_0_33.33%] xl:flex-[0_0_25%] px-[15px]"
+                  >
+                    <div class="flex flex-col justify-center items-center">
+                      <figure
+                        class="relative w-full aspect-[333/333] mb-4 lg:mb-8.5"
+                      >
+                        <img
+                          src="images/project-1.avif"
+                          alt="project"
+                          class="size-full object-cover absolute inset-0"
+                          loading="lazy"
+                        />
+                      </figure>
+                      <h6
+                        class="text-20 lg:text-26 font-semibold lg:text-20 text-center text-black leading-[1] mb-1"
+                      >
+                        Kingdom Tower
+                      </h6>
+                      <p
+                        class="text-14 2xl:text-16 font-semibold text-center text-[#11101080] leading-[1.625]"
+                      >
+                        Marble Flooring
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="embla__slide flex-[0_0_100%] sm:flex-[0_0_50%] md:flex-[0_0_33.33%] xl:flex-[0_0_25%] px-[15px]"
+                  >
+                    <div class="flex flex-col justify-center items-center">
+                      <figure
+                        class="relative w-full aspect-[333/333] mb-4 lg:mb-8.5"
+                      >
+                        <img
+                          src="images/project-2.avif"
+                          alt="project"
+                          class="size-full object-cover absolute inset-0"
+                          loading="lazy"
+                        />
+                      </figure>
+                      <h6
+                        class="text-20 lg:text-26 font-semibold lg:text-20 text-center text-black leading-[1] mb-1"
+                      >
+                        Dubai mall
+                      </h6>
+                      <p
+                        class="text-14 2xl:text-16 font-semibold text-center text-[#11101080] leading-[1.625]"
+                      >
+                        Wood Flooring
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="embla__slide flex-[0_0_100%] sm:flex-[0_0_50%] md:flex-[0_0_33.33%] xl:flex-[0_0_25%] px-[15px]"
+                  >
+                    <div class="flex flex-col justify-center items-center">
+                      <figure
+                        class="relative w-full aspect-[333/333] mb-4 lg:mb-8.5"
+                      >
+                        <img
+                          src="images/project-3.avif"
+                          alt="project"
+                          class="size-full object-cover absolute inset-0"
+                          loading="lazy"
+                        />
+                      </figure>
+                      <h6
+                        class="text-20 lg:text-26 font-semibold lg:text-20 text-center text-black leading-[1] mb-1"
+                      >
+                        King Road Offices
+                      </h6>
+                      <p
+                        class="text-14 2xl:text-16 font-semibold text-center text-[#11101080] leading-[1.625]"
+                      >
+                        Outdoor Flooring
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="embla__slide flex-[0_0_100%] sm:flex-[0_0_50%] md:flex-[0_0_33.33%] xl:flex-[0_0_25%] px-[15px]"
+                  >
+                    <div class="flex flex-col justify-center items-center">
+                      <figure
+                        class="relative w-full aspect-[333/333] mb-4 lg:mb-8.5"
+                      >
+                        <img
+                          src="images/project-4.avif"
+                          alt="project"
+                          class="size-full object-cover absolute inset-0"
+                          loading="lazy"
+                        />
+                      </figure>
+                      <h6
+                        class="text-20 lg:text-26 font-semibold lg:text-20 text-center text-black leading-[1] mb-1"
+                      >
+                        Beach Tower Alupang
+                      </h6>
+                      <p
+                        class="text-14 2xl:text-16 font-semibold text-center text-[#11101080] leading-[1.625]"
+                      >
+                        Wood Flooring
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="flex flex-col justify-center items-center">
-                <figure class="relative w-full aspect-[333/333] mb-4 lg:mb-8.5">
-                  <img
-                    src="images/project-2.avif"
-                    alt="project"
-                    class="size-full object-cover absolute inset-0"
-                    loading="lazy"
+              <button
+                class="project-embla__prev block xl:hidden absolute top-1/2 -translate-y-1/2 left-0 border border-black px-2 py-2 bg-white transition-all duration-300 ease-in-out hover:scale-[1.1] -translate-x-2 hover:bg-black hover:text-white"
+              >
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 19.5L8.25 12l7.5-7.5"
                   />
-                </figure>
-                <h6
-                  class="text-20 lg:text-26 font-semibold lg:text-20 text-center text-black leading-[1] mb-1"
+                </svg>
+              </button>
+              <button
+                class="project-embla__next block xl:hidden absolute top-1/2 -translate-y-1/2 right-0 bg-white border border-black px-2 py-2 transition-all duration-300 ease-in-out hover:scale-[1.1] translate-x-2 hover:bg-black hover:text-white"
+              >
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  Dubai mall
-                </h6>
-                <p
-                  class="text-14 2xl:text-16 font-semibold text-center text-[#11101080] leading-[1.625]"
-                >
-                  Wood Flooring
-                </p>
-              </div>
-              <div class="flex flex-col justify-center items-center">
-                <figure class="relative w-full aspect-[333/333] mb-4 lg:mb-8.5">
-                  <img
-                    src="images/project-3.avif"
-                    alt="project"
-                    class="size-full object-cover absolute inset-0"
-                    loading="lazy"
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
                   />
-                </figure>
-                <h6
-                  class="text-20 lg:text-26 font-semibold lg:text-20 text-center text-black leading-[1] mb-1"
-                >
-                  King Road Offices
-                </h6>
-                <p
-                  class="text-14 2xl:text-16 font-semibold text-center text-[#11101080] leading-[1.625]"
-                >
-                  Outdoor Flooring
-                </p>
-              </div>
-              <div class="flex flex-col justify-center items-center">
-                <figure class="relative w-full aspect-[333/333] mb-4 lg:mb-8.5">
-                  <img
-                    src="images/project-4.avif"
-                    alt="project"
-                    class="size-full object-cover absolute inset-0"
-                    loading="lazy"
-                  />
-                </figure>
-                <h6
-                  class="text-20 lg:text-26 font-semibold lg:text-20 text-center text-black leading-[1] mb-1"
-                >
-                  Beach Tower Alupang
-                </h6>
-                <p
-                  class="text-14 2xl:text-16 font-semibold text-center text-[#11101080] leading-[1.625]"
-                >
-                  Wood Flooring
-                </p>
-              </div>
+                </svg>
+              </button>
             </div>
+
             <div class="mt-10">
               <button
                 id="view-all-projects"
@@ -476,5 +693,42 @@
     ></div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+  <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
   <script src="main.js"></script>
+ <script type="text/javascript">
+  // Main embla
+  const rootNode = document.querySelector(".embla");
+  const viewportNode = rootNode.querySelector(".embla__viewport");
+
+  const prevButtonNode = rootNode.querySelector(".embla__prev");
+  const nextButtonNode = rootNode.querySelector(".embla__next");
+
+  const options = { loop: false, align: "start" };
+  const emblaApi = EmblaCarousel(viewportNode, options);
+
+  prevButtonNode.addEventListener("click", () => emblaApi.scrollPrev(), false);
+  nextButtonNode.addEventListener("click", () => emblaApi.scrollNext(), false);
+
+  // Project embla
+  const projectRootNode = document.querySelector(".project-embla");
+  const projectViewportNode = projectRootNode.querySelector(".project-embla__viewport");
+
+  const projectPrevButtonNode = projectRootNode.querySelector(".project-embla__prev");
+  const projectNextButtonNode = projectRootNode.querySelector(".project-embla__next");
+
+  const projectEmblaApi = EmblaCarousel(projectViewportNode, options);
+
+  projectPrevButtonNode.addEventListener(
+    "click",
+    () => projectEmblaApi.scrollPrev(),
+    false
+  );
+
+  projectNextButtonNode.addEventListener(
+    "click",
+    () => projectEmblaApi.scrollNext(),
+    false
+  );
+</script>
+
 </html>

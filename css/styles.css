@@ -97,10 +97,10 @@ img {
     "one one one one one two two two four four four four ";
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1280px) {
   .product__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: none;
+    /* grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 250px);
     column-gap: 24px;
     row-gap: 50px;
@@ -109,11 +109,11 @@ img {
       "one one"
       "one one"
       "two three "
-      "two four ";
+      "two four "; */
   }
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .product__grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -127,7 +127,7 @@ img {
       "three "
       "four ";
   }
-}
+} */
 
 .product__area-one {
   grid-area: one;
@@ -167,3 +167,4 @@ img {
     padding: 16px;
   }
 }
+
