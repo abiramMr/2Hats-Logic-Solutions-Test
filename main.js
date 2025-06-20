@@ -181,3 +181,5 @@ function animateGridChildren(containerSelector) {
 // Use the helper
 animateGridChildren(".product__grid");
 animateGridChildren(".home-project-cards");
+animateGridChildren(".embla__container");
+
